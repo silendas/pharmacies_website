@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Sidebar</title>
+    <title>Website | Apoteker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('layout.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -13,14 +13,14 @@
     <div class="d-flex main">
         <nav id="sidebar" class="sidebar p-3">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h4 class="text-light text-center" style="font-weight: 500">Apoteker</h4>
+                <h4 class="text-light text-center" style="font-weight: 500;">Apoteker</h4>
                 <button id="closeSidebar" class="btn btn-light d-lg-none"><i class="bi bi-x-lg"></i></button>
             </div>
             <ul class="nav flex-column">
                 <!-- Dashboard -->
                 <li class="nav-item mb-3">
                     <a href="#" class="nav-link">
-                        <i class="bi bi-house-door me-2"></i> Dashboard
+                        <i class="bi bi-speedometer"></i> Dashboard
                     </a>
                 </li>
         
