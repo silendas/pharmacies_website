@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Lato:wght@300;400;700&family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Rubik&family=Sacramento&family=Signika:wght@300;400;500;700&family=Tangerine:wght@400;700&family=Work+Sans:wght@100;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:wght@300;400;700&family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&family=Rubik&family=Sacramento&family=Signika:wght@300;400;500;700&family=Tangerine:wght@400;700&family=Work+Sans:wght@100;400;600&display=swap");
+/* ----------------------------------------------Main Layout----------------------------------------- */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar Styles */
+/* Sidebar Styles */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000; /* Latar belakang hitam */
+    transform: translateX(-100%); /* Tersembunyi secara default */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1050;
+}
+
+#sidebar.open {
+    transform: translateX(0); /* Tampilkan sidebar ketika terbuka */
+}
+
+#sidebar .nav-link {
+    color: #fff; /* Warna teks putih */
+    padding: 10px 15px;
+    border-radius: 0; /* Tidak ada border-radius default */
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-radius 0.3s ease;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #cceb4d; /* Warna hover kuning */
+    color: #000; /* Warna teks hitam saat hover */
+    border-radius: 8px; /* Border-radius saat hover */
+}
+
+#sidebar .nav-link i {
+    margin-right: 10px; /* Margin kanan untuk ikon */
+}
+
+#sidebar .nav-link:hover i {
+    color: #000; /* Warna ikon juga berubah saat hover */
+}
+
+#sidebar.open {
+    transform: translateX(0); /* Show sidebar when open */
+}
+
+#toggleSidebar {
+    z-index: 1100;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1040;
+}
+
+/* Content Styles */
+.main-content {
+    transition: margin-left 0.3s ease;
+    min-height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+.content.sidebar-open {
+    margin-left: 250px; /* When sidebar is open, shift content to the right */
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    #sidebar {
+        transform: translateX(-100%); /* Hide sidebar on large screens */
+    }
+
+    #sidebar.open {
+        transform: translateX(0); /* Show sidebar on mobile */
+    }
+
+    .content.sidebar-open {
+        margin-left: 250px; /* Content shifts when sidebar is visible */
+    }
+
+    .content {
+        margin-left: 0; /* No margin on small screens */
+    }
+}
+
+/* Hamburger menu icon styles */
+@media (min-width: 992px) {
+    #toggleSidebar {
+        display: block; /* Display burger menu on larger screens */
+    }
+}
