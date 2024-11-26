@@ -19,7 +19,7 @@
             <ul class="nav flex-column">
                 <!-- Dashboard -->
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link">
+                    <a href="dashboard" class="nav-link">
                         <i class="bi bi-speedometer"></i> Dashboard
                     </a>
                 </li>
@@ -32,18 +32,18 @@
                     <div id="inventorySubmenu" class="collapse ms-3">
                         <ul class="nav flex-column">
                             <li class="nav-item mb-3">
-                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#stockSubmenu" aria-expanded="false" aria-controls="stockSubmenu">
+                                <a href="" class="nav-link" data-bs-toggle="collapse" data-bs-target="#stockSubmenu" aria-expanded="false" aria-controls="stockSubmenu">
                                     <i class="bi bi-box me-2"></i> Stock Barang
                                 </a>
                                 <div id="stockSubmenu" class="collapse ms-3">
                                     <ul class="nav flex-column">
                                         <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link">
+                                            <a href="stok_masuk" class="nav-link">
                                                 <i class="bi bi-box-arrow-in-right me-2"></i> Stok Masuk
                                             </a>
                                         </li>
                                         <li class="nav-item mb-2">
-                                            <a href="#" class="nav-link">
+                                            <a href="stok_keluar" class="nav-link">
                                                 <i class="bi bi-box-arrow-out-right me-2"></i> Stok Keluar
                                             </a>
                                         </li>
@@ -67,22 +67,22 @@
                     <div id="salarySubmenu" class="collapse ms-3">
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="daftar_gaji" class="nav-link">
                                     <i class="bi bi-people me-2"></i> Daftar Gaji Karyawan
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="detail_gaji" class="nav-link">
                                     <i class="bi bi-info-circle me-2"></i> Detail Gaji
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="pengelolaan_gaji" class="nav-link">
                                     <i class="bi bi-gear me-2"></i> Pengelolaan Gaji
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="laporan_gaji" class="nav-link">
                                     <i class="bi bi-file-earmark-bar-graph me-2"></i> Laporan Gaji
                                 </a>
                             </li>
@@ -98,17 +98,17 @@
                     <div id="paymentSubmenu" class="collapse ms-3">
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="daftar_pembayaran" class="nav-link">
                                     <i class="bi bi-list-check me-2"></i> Daftar Pembayaran
                                 </a>
                             </li>
-                            <li class="nav-item mb-2">
+                            {{-- <li class="nav-item mb-2">
                                 <a href="#" class="nav-link">
                                     <i class="bi bi-file-text me-2"></i> Detail Pembayaran
                                 </a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="laporan_pembayaran" class="nav-link">
                                     <i class="bi bi-graph-up-arrow me-2"></i> Laporan Pembayaran
                                 </a>
                             </li>
