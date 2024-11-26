@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CostumerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\StokMasukController;
 use App\Http\Controllers\DaftarGajiController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\StokKeluarController;
 use App\Http\Controllers\LaporanGajiController;
 use App\Http\Controllers\PengelolaanGajiController;
 use App\Http\Controllers\DaftarPembayaranController;
+use App\Http\Controllers\LaporanInventoryController;
 use App\Http\Controllers\LaporanPembayaranController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -28,9 +30,14 @@ Route::get('/', function () {
 });
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
+// Costumer
+
+Route::get('costumer', [CostumerController::class, 'index'])->name('costumer');
+
 // Inventory
 Route::get('stok_masuk', [StokMasukController::class, 'index'])->name('stok_masuk');
 Route::get('stok_keluar', [StokKeluarController::class, 'index'])->name('stok_keluar');
+Route::get('laporan_inventory', [LaporanInventoryController::class, 'index'])->name('laporan_inventory');
 
 
 // Pembayaran

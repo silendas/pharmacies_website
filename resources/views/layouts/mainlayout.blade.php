@@ -23,6 +23,11 @@
                         <i class="bi bi-speedometer"></i> Dashboard
                     </a>
                 </li>
+                <li class="nav-item mb-3">
+                    <a href="costumer" class="nav-link">
+                        <i class="bi bi-speedometer"></i> Costumer
+                    </a>
+                </li>
         
                 <!-- Inventory -->
                 <li class="nav-item mb-3">
@@ -51,7 +56,7 @@
                                 </div>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#" class="nav-link">
+                                <a href="laporan_inventory" class="nav-link">
                                     <i class="bi bi-clipboard-data me-2"></i> Laporan Inventory
                                 </a>
                             </li>
